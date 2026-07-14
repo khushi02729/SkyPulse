@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+
+  body {
+
+  font-family:"Poppins",sans-serif;
+
+  min-height:100vh;
+
+  transition:0.5s;
+
+  }
+
+  color: #0b263d;
+
+}
+
+
+/* Navbar */
+
+.navbar {
+
+  width: 100%;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.15);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+.navbar h2 {
+
+  font-size: 28px;
+  text-shadow: #2c3133 1px 1px 1px;
+  text-align: left;
+  ;
+
+}
+
+
+
+/* Search */
+
+.search-bar {
+
+  margin-top: 40px;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:10px;
+
+}
+
+
+.search-bar input {
+
+  width:300px;
+
+  padding:15px 20px;
+
+  border:none;
+
+  outline:none;
+
+  border-radius:30px;
+
+  font-size:16px;
+  
+  color: #475b6f;
+
+}
+
+
+
+.search-bar button {
+
+  width:50px;
+
+  height:50px;
+
+  border-radius:50%;
+
+  border:none;
+
+  cursor:pointer;
+
+  background:#ffffff;
+
+  color:#333;
+
+  font-size:18px;
+
+  transition:0.3s;
+
+}
+
+
+.search-bar button:hover {
+
+  transform:scale(1.1);
+  border-color: #0b263d;
+  box-shadow: 0 0 10px rgba(52, 52, 57, 0.2);
+
+}
+
+
+
+/* Weather Card */
+
+
+.weather-card {
+
+
+  width:380px;
+
+  margin:40px auto;
+
+
+  padding:30px;
+
+
+  text-align:center;
+
+
+  background:rgba(255,255,255,0.2);
+
+
+  backdrop-filter:blur(15px);
+
+
+  border-radius:25px;
+
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+.weather-card img {
+
+
+  width:120px;
+
+
+}
+
+
+
+.weather-card h1 {
+
+
+  font-size:60px;
+
+  margin:10px 0;
+
+}
+
+
+
+.weather-card h3 {
+
+
+  text-transform:capitalize;
+
+  font-size:20px;
+
+}
+
+
+
+.details {
+
+
+  margin-top:25px;
+
+  display:flex;
+
+  justify-content:space-around;
+
+}
+
+
+
+.details p {
+
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  font-size:14px;
+
+}
+
+
+
+/* Forecast */
+
+
+.forecast {
+
+
+  text-align:center;
+
+  margin:40px auto;
+
+}
+
+
+
+.forecast h2 {
+
+  margin-bottom:20px;
+
+}
+
+
+
+.forecast-container {
+
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+
+}
+
+
+
+.forecast-card {
+
+
+  width:150px;
+
+
+  padding:20px;
+
+
+  border-radius:20px;
+
+
+  background:rgba(255,255,255,0.2);
+
+
+  backdrop-filter:blur(10px);
+
+
+  transition:0.3s;
+
+
+}
+
+
+
+.forecast-card:hover {
+
+
+  transform:translateY(-10px);
+
+
+}
+
+
+
+.forecast-card img {
+
+
+  width:80px;
+
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:500px){
+
+
+.search-bar input{
+
+width:220px;
+
+}
+
+
+
+.weather-card{
+
+width:90%;
+
+}
+
+}
+.app{
+
+min-height:100vh;
+
+padding-bottom:40px;
+
+transition:0.8s;
+
+}
+
+
+
+/* Sunny */
+
+.clear{
+
+  background:linear-gradient(
+  135deg,
+  #fddb92,
+  #d1fdff
+  );
+
+}
+
+
+
+/* Cloudy */
+
+.clouds{
+
+  background:linear-gradient(
+  135deg,
+  #bdc3c7,
+  #2c3e50
+  );
+
+}
+
+
+
+/* Rain */
+
+.rain{
+
+  background:linear-gradient(
+  135deg,
+  #4b79a1,
+  #283e51
+  );
+
+}
+
+
+
+/* Thunderstorm */
+
+.storm{
+
+  background:linear-gradient(
+  135deg,
+  #232526,
+  #414345
+  );
+
+}
+
+
+
+/* Snow */
+
+.snow{
+
+  background:linear-gradient(
+  135deg,
+  #e6dada,
+  #274046
+  );
+
+}
+
+
+
+/* Mist */
+
+.mist{
+
+  background:linear-gradient(
+  135deg,
+  #606c88,
+  #3f4c6b
+  );
+
+}
+
+
+
+/* Default */
+
+.default{
+
+  background:linear-gradient(
+  135deg,
+  #89f7fe,
+  #66a6ff
+  );
+
+}
